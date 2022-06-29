@@ -3,9 +3,8 @@
 
 
 var p1WinCount = 0;
-        var p2WinCount = 0;
-
-        async function PlayGame() {
+var p2WinCount = 0;
+async function PlayGame() {
             if(p1WinCount >=3 || p2WinCount >=3) {
                 p1WinCount = 0;
                 p2WinCount = 0;
@@ -43,11 +42,9 @@ var p1WinCount = 0;
                         document.getElementById('won').innerHTML = "Player 2 Won";
                     }
                 }
-            }
-          
-            
+            }        
         }
-        function RandomPow(){
+function RandomPow(){
                 let x = Math.floor((Math.random() * 5) + 1);
                 console.log(x);
                 return x;
